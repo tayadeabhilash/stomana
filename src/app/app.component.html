@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=block" rel="stylesheet">
+</head>
+
+<body>
+  <div style="display: inline-flex;">
+    <H1 style="color:#424242;">Portfolio</H1>
+
+    <button id="addbtn" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+      Add a stock
+    </button>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <app-modal></app-modal>
+  </div>
+  <br><br>
+  <div class="basic-container">
+    <app-stock-list></app-stock-list>
+  </div>
+
+</body>
+</html>

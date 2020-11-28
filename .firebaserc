@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "stomana-d76bd": {
+      "hosting": {
+        "stomana-frontend": [
+          "stomana-d76bd"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "stomana-d76bd"
+  }
+}
