@@ -49,7 +49,7 @@ export class StockListComponent implements AfterViewInit {
           name: e.payload.doc.id,
           ...e.payload.doc.data(),
           pl: total < 0 ? total : '+' + total,
-          color: total < 0 ? '#FF6276' : '#31FF54',
+          color: total < 0 ? 'red' : 'green',
         } as Stock;
       });
       this.dataSource = new MatTableDataSource(this.stockArr);

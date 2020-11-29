@@ -1,17 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+html, body {
+    background-color: #EBEDFF;
+ }
 
+    
     @media screen and (min-width: 601px) {
         body {
             padding: 20px;
-             margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+             margin: 0; font-family: 'Alegreya', serif; 
             }
       }
       
       @media screen and (max-width: 600px) {
         body {
             padding: 7px;
-             margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+             margin: 0; font-family: 'Alegreya', serif; 
             }
       }

@@ -1,6 +1,27 @@
 #addbtn{
-    color:white;
-    background-color: #424242;
-    margin-left: 30px;
-    border-color: #424242;
+    color:#EBEDFF  ;
+    background-color: #3847B2 ;
+    float: right;
+    border-color: #3847B2 ;
+    font-weight: 500;
+    border-radius: 15px;
+}
+
+h1{
+    color:#3847B2 ;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+#bag{
+    margin-top: 5px;
+    fill:#3847B2;
+    width: 48px;
+    height: 48px;
+}
+
+#plus{
+    margin-top: 3px;
+    fill:#EBEDFF ;
+    width: 20px;
+    height: 20px;
 }

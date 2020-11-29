@@ -1,22 +1,26 @@
 table {
     width: 100%;
+    font-family: 'Alegreya', serif; 
   }
   
   .mat-form-field {
     font-size: 14px;
     width: 100%;
-    background-color: rgb(46,46,46);
-    margin-bottom: 10px;
     font-size: 16px;
     text-align: center;
+    border-radius: 25px;
   }
   
   mat-label{
-    color: white;
-    margin-left: 10px;
+    color:#3847B2;
+    font-weight: 500;
+    font-size: 17px;
+    font-family: 'Alegreya', serif; 
+  }
+  ::ng-deep.mat-form-field-underline, ::ng-deep .mat-form-field-ripple {
+    background-color: #3847B2 !important;
   }
   .mat-header-cell{
-    font-weight: bold;
   }
 
   #mat-input-0{
@@ -26,24 +30,53 @@ table {
     justify-content: center;
     margin-left: 6%
   }
-  
-  
 
-  td, th {
+  .mat-table{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    overflow:hidden !important;
+    background-color: white;
+  }
+  
+  .mat-paginator{
+    background-color: #3847B2 ;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-family: 'Alegreya', serif; 
+  }
+
+  td {
     width: 20%;
-    color: white;
+    color: #424242 ;
     font-size: 10px;
     text-align:center;
     word-break: break-word;
     padding: 20px;
   }
+  th {
+    width: 20%;
+    color: #EBEDFF ;
+    background-color: #3847B2   ;
+    font-size: 10px;
+    text-align:center;
+    word-break: break-word;
+    padding: 20px;
+  }
+
   @media screen and (min-width: 601px) {
     td, th {
       font-size: 17px;
     }
     
+    
   }
-  
+  .mat-row:nth-child(even){
+    background-color:white;
+    }
+
+  .mat-row:nth-child(odd){
+    background-color:#F5F6F8 ;
+    }
   @media screen and (max-width: 600px) {
     td, th {
       font-size: 10px;
@@ -70,4 +103,15 @@ table {
       justify-content: center;
       margin-left: 20%
     }
+  }
+
+  #searchIcon{
+    width: 17px;
+    height: 17px;
+    fill: #3847B2;
+    margin-bottom: 2px;
+  }
+
+  #searchText{
+    margin-left: 10px;
   }

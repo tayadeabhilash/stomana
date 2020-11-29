@@ -1,18 +1,28 @@
 ::ng-deep .cdk-overlay-container{
     z-index: 1060;
 }
+.modal-header{
+    background-color: #3847B2;
+    color: white;
+  }
+  .modal-dialog {
+    max-width: 700px !important;
+  }
+  .close{
+      color: white;
+  }
 #saveBtn{
     color:white;
-    background-color: #424242;
-    border-color: #424242;
+    background-color: #3847B2;
+    border-color: #3847B2;
     border-width: 2px;
 }
 #closeBtn{
-    color:black;
+    color:#3847B2;
     background-color:white;
-    border-color:#424242;
+    border-color:#3847B2;
     border-width: 2px;
 }
 #clearBtn{
-    color: black;
+    color: #3847B2;
 }

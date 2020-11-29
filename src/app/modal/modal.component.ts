@@ -107,6 +107,9 @@ export class ModalComponent implements OnInit {
   }
 
   private _filter(value: string): string[] {
+    if (value === null) {
+      value = '';
+    }
     const filterValue = this._normalizeValue(value);
     return this.stockNameArray.filter(street => this._normalizeValue(street).includes(filterValue));
   }
@@ -125,6 +128,10 @@ export class ModalComponent implements OnInit {
     //   tax: '',
     //   otherCharges: ''
     // });
-    this.addStockForm.reset();
+    this.addStockForm.reset('');
+    this.filteredNames = this.addStockForm.get('name').valueChanges.pipe(
+      startWith(''),
+      map(value => this._filter(value))
+    );
   }
 }
